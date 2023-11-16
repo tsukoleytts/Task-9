@@ -1,0 +1,33 @@
+import static java.lang.Math.*;
+
+public class MathOperations {
+
+    public static int add(int a, int b) {
+        return addExact(a, b);
+    }
+
+    public static int subtract(int a, int b) {
+        return subtractExact(a, b);
+    }
+
+    public static int multiply(int a, int b) {
+        return multiplyExact(a, b);
+    }
+
+    public static int divide(int a, int b) {
+        return floorDiv(a, b);
+    }
+
+    public static void main(String[] args) {
+        // Demonstrate the math operations here
+        int resultAdd = add(15, 20);
+        int resultSubtract = subtract(100, 99);
+        int resultMultiply = multiply(70, 41);
+        int resultDivide = divide(2000, 100);
+
+        System.out.println("Addition result: " + resultAdd);
+        System.out.println("Subtraction result: " + resultSubtract);
+        System.out.println("Multiplication result: " + resultMultiply);
+        System.out.println("Division result: " + resultDivide);
+    }
+}
